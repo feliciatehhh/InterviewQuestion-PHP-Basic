@@ -1,3 +1,13 @@
+.box {
+    margin: auto;
+    border-style: solid;
+    text-align: center;
+    background-color: rgb(233, 208, 208);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
 .border{
     border-style:ridge;
     width: 100vh;
