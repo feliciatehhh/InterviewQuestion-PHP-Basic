@@ -1,1 +1,32 @@
-Question 1UPDATE employee_job_table SET job_id = '4', effective_date = '2020-01-01' WHERE employee_id = '3';ÑÑÑÑÑÑQuestion 2SELECT employee_name, employee_no, job_name as job_title, effective_date FROM employee_profile_tableINNER JOIN job_profile_tableON employee_profile_table.employee_id=job_profile_table.job_idINNER JOIN employee_job_tableON job_profile_table.job_id=employee_job_table.job_id;Question 3SELECT employee_name, employee_no, job_name AS `latest job title` FROM employee_profile_tableINNER JOIN job_profile_tableON employee_profile_table.employee_id=job_profile_table.job_id;Question 4DELETE FROM employee_profile_tableINNER JOIN employee_job_tableON employee_profile_table.employee_id = employee_job_table.employee_id  INNER JOIN job_profile_tableON employee_job_table.job_id=job_profile_table.job_idWHERE employee_no = '1000' and `effective_date` = '2020-01-01';
+Question 1
+
+
+UPDATE employee_job_table SET job_id = '4', effective_date = '2020-01-01' WHERE employee_id = '3';
+
+
+Question 2
+
+
+SELECT employee_name, employee_no, job_name as job_title, effective_date FROM employee_profile_table
+INNER JOIN job_profile_table
+ON employee_profile_table.employee_id=job_profile_table.job_id
+INNER JOIN employee_job_table
+ON job_profile_table.job_id=employee_job_table.job_id;
+
+
+Question 3
+
+
+
+SELECT employee_name, employee_no, job_name AS `latest job title` FROM employee_profile_table
+INNER JOIN job_profile_table
+ON employee_profile_table.employee_id=job_profile_table.job_id;
+
+Question 4
+
+DELETE FROM employee_profile_table
+INNER JOIN employee_job_table
+ON employee_profile_table.employee_id = employee_job_table.employee_id  
+INNER JOIN job_profile_table
+ON employee_job_table.job_id=job_profile_table.job_id
+WHERE employee_no = '1000' and `effective_date` = '2020-01-01';
