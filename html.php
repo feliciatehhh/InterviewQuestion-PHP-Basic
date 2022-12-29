@@ -25,7 +25,7 @@ body{
 <?php 
 echo " <br><br><br><br><br><br><br><br>";
 ?>
-<section class="bro">
+<section class="box">
 <div class="border">
     
 <?php echo " <br><br><br><br><br>";?>
