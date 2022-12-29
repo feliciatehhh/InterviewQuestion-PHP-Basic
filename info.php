@@ -40,7 +40,6 @@ echo " <br><br><br><br><br><br><br><br>";
 <?php echo "<br><br>";?>
 
 <?php
-// include 'index.php';
 
 $input = $_POST["textarea"];
 
