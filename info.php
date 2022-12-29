@@ -52,7 +52,6 @@ if($input == "abc"){
     echo "Error";
     }
 ?>
-<!-- <h2>Key in username and click submit</h2> -->
 
 </form>
 
@@ -60,18 +59,3 @@ if($input == "abc"){
 </section>
 </body>
 </html>
-
-<?php
-// include 'index.php';
-
-// $input = $_POST["textarea"];
-
-// echo $input;
-// echo "<br />";
-
-// if($input == "abc"){
-//     echo "Verfied";
-//     }else{
-//     echo "Error";
-//     }
-// ?>
